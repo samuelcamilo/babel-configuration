@@ -2,15 +2,15 @@
 
 [![](https://d33wubrfki0l68.cloudfront.net/7a197cfe44548cc1a3f581152af70a3051e11671/78df8/img/babel.svg)](https://babeljs.io)
 
-Nesse primeiro tutorial quero demonstrar como configurar o Babel na sua aplicação. Estou iniciando nesse mundo de tutoriais e a muito tempo queria escrever alguma coisa. Atualmente estou estudando javascript e a algum tempo o Babel tem ganhado bastante espaço por sua importancia nas aplicações que usam ecmascript6+. Espero poder te ajudar ao máximo, e já peço desculpas por algum possivel erro, esse é meu primeiro post, então estou aprendendo. Muito grato, e vamos lá...
+Nesse primeiro tutorial vou demonstrar como configurar o Babel na sua aplicação ecmascript6+. Estou iniciando nesse mundo de tutoriais e há muito tempo queria escrever alguma coisa. Atualmente estou estudando ecmascript6+ e tenho percebido que o Babel tem ganhado bastante espaço por sua importancia nas aplicações que usam ecmascript6+. Espero poder te ajudar ao máximo, e já peço desculpas por algum possivel erro, esse é meu primeiro post, então estou aprendendo. Muito grato, e vamos lá...
 
 
-O Babel é um transpiler de código, que tem a função de tranformar código ecmascript6+ em uma versão que os navegadores atuais possam suportar. Hoje ele é extremamente necessário em aplicações feitas com React, Vue e Angular.
-Com demonstrações simples, quero demonstrar como a configuração pode ser feita de forma fácil e correta. Existem outras formas mais práticas para a configuração do Babel, mas caso você seja uma pessoa, que como eu, gosta de saber como as coisas funcionam por debaixo dos panos, vamos lá...
+O Babel é um transpiler de código, que tem a função de transformar código ecmascript6+ em uma versão que os navegadores atuais possam suportar. Hoje ele é extremamente necessário em aplicações feitas com React, Vue e Angular.
+Com demonstrações simples, quero demonstrar como a configuração pode ser feita de forma fácil e correta. Existem outras formas mais práticas que já criam um ambiente já configurado, mas caso você seja uma pessoa, que como eu, gosta de saber como as coisas funcionam por debaixo dos panos, vamos lá...
 
 ### Iniciando um projeto javascript
 
-Inicialmente precisaremos ter instalado o [Node.js](https://nodejs.org/), como também um gerenciador de pacotes. Nesse tutorial estou utilizando o [Yarn](https://yarnpkg.com/pt-BR/). Ele nos permitirá compartilhar e usar esses códigos compartilhados por desenvolvedores do mundo todo. Existem outros gerenciadores, mas fique a vontade para escolher.
+Inicialmente precisaremos ter instalado o [Node.js](https://nodejs.org/), como também um gerenciador de pacotes. Nesse tutorial estou utilizando o [Yarn](https://yarnpkg.com/pt-BR/). Ele nos permitirá compartilhar e usar esses códigos compartilhados por desenvolvedores do mundo todo. Existem outros gerenciadores, então fique a vontade para escolher.
  
 ### Instalação
 
@@ -39,7 +39,7 @@ Arquivo gerado:
 }
 ```
 
-Agora vamos realizar a instalação de algumas dependências importantes para o funcionamendo do Babel. Usando os comandos baixo, estaremos fazendo a instalação do `@babel/cli e @babel/preset-env`. Eles nos ajudarão a identificar qual tipo de ambiente estamos rodando a nossa aplicação e assim colocar o Babel no contexto da aplicação.
+Agora vamos realizar a instalação de algumas dependências importantes para o funcionamento do Babel. Usando os comandos baixo, estaremos fazendo a instalação do `@babel/cli e @babel/preset-env`. Eles nos ajudarão a identificar qual tipo de ambiente estamos rodando a nossa aplicação e assim colocar o Babel no contexto da aplicação.
 
 ```sh
 yarn add @babel/cli
@@ -51,6 +51,7 @@ Não vamos esquecer de instalarmos o `@babel/core`
 ```sh
 yarn add @babel/core
 ```
+
 Caso esteja tudo certo com nossas instalações, podemos seguir para o próximo passo.
 
 ### Configuração
